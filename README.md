@@ -1,24 +1,24 @@
 # MarkdownSharp
-## ½éÉÜ
-**MarkdownSharp**ÊÇÒ»¿î¹¦ÄÜÇ¿´óµÄ´¦Àí¿â£¬ËüÄÜ¹»½« Markdown ÎÄ±¾×ª»»Îª HTML¡£¸Ã¿â»ùÓÚ C# ºÍ .NET SDK ¿ª·¢£¬Ä¿Ç°µÄ»ù±¾¹¦ÄÜÕıÔÚÖğ²½ÍêÉÆÖĞ¡£»¶Ó­¸÷Î»¿ª·¢Õß¹±Ï××Ô¼ºµÄÁ¦Á¿£¬¹²Í¬ÍêÉÆÕâ¸öÏîÄ¿¡£<br>![Logo](https://github.moeyy.xyz/https://github.com/yilihamujiang365-new/MarkdownSharp.NET/blob/master/icon.ico)<br>![Logo](https://github.com/yilihamujiang365-new/MarkdownSharp.NET/blob/master/icon.ico)
-## ¿ªÔ´½éÉÜ
-±¾´¦Àí¿â»ùÓÚMIT¿ªÔ´Ğ­Òé<br>
-×÷ÕßE-mail:[yilihamujiang365@outlook.com](mailto:yilihamujiang365@outlook.com)
-## Ê¹ÓÃ·½·¨
-×÷Õß¿ª·¢»·¾³ÊÇ<br>
-- ÏµÍ³»·¾³£ºMicrosoft Windows 11 ×¨Òµ°æ 10.0.26120
-- NET SDK°æ±¾:9.0.100
-- Visual Studio°æ±¾£º2022
-## ÏÈÒıÓÃNuget
-### ÊÖ¶¯ÒıÓÃ
-- ÏîÄ¿ÖĞÌí¼ÓÒıÓÃ.dll(¶¯Ì¬Á´½Ó¿â)£¬È»ºóÔÙÔÚ´úÂëÖĞusing
+## ä»‹ç»
+**MarkdownSharp**æ˜¯ä¸€æ¬¾åŠŸèƒ½å¼ºå¤§çš„å¤„ç†åº“ï¼Œå®ƒèƒ½å¤Ÿå°† Markdown æ–‡æœ¬è½¬æ¢ä¸º HTMLã€‚è¯¥åº“åŸºäº C# å’Œ .NET SDK å¼€å‘ï¼Œç›®å‰çš„åŸºæœ¬åŠŸèƒ½æ­£åœ¨é€æ­¥å®Œå–„ä¸­ã€‚æ¬¢è¿å„ä½å¼€å‘è€…è´¡çŒ®è‡ªå·±çš„åŠ›é‡ï¼Œå…±åŒå®Œå–„è¿™ä¸ªé¡¹ç›®ã€‚<br>![Logo](https://github.moeyy.xyz/https://github.com/yilihamujiang365-new/MarkdownSharp.NET/blob/master/icon.ico)<br>![Logo](https://github.com/yilihamujiang365-new/MarkdownSharp.NET/blob/master/icon.ico)
+## å¼€æºä»‹ç»
+æœ¬å¤„ç†åº“åŸºäºMITå¼€æºåè®®<br>
+ä½œè€…E-mail:[yilihamujiang365@outlook.com](mailto:yilihamujiang365@outlook.com)
+## ä½¿ç”¨æ–¹æ³•
+ä½œè€…å¼€å‘ç¯å¢ƒæ˜¯<br>
+- ç³»ç»Ÿç¯å¢ƒï¼šMicrosoft Windows 11 ä¸“ä¸šç‰ˆ 10.0.26120
+- NET SDKç‰ˆæœ¬:9.0.100
+- Visual Studioç‰ˆæœ¬ï¼š2022
+## å…ˆå¼•ç”¨Nuget
+### æ‰‹åŠ¨å¼•ç”¨
+- é¡¹ç›®ä¸­æ·»åŠ å¼•ç”¨.dll(åŠ¨æ€é“¾æ¥åº“)ï¼Œç„¶åå†åœ¨ä»£ç ä¸­using
 ```Csharp
 using MarkdownSharp;
 ```
-### ÓÃNugetÏÂÔØ
+### ç”¨Nugetä¸‹è½½
 [nuget](https://www.nuget.org/packages/MarkdownSharp/)
 
-### ÊµÀı
+### å®ä¾‹
 ```Csharp
 using System;
 using MarkdownSharp;
@@ -26,7 +26,7 @@ class Program
 {
     static void Main()
     {
-        // Markdown ÎÄ±¾
+        // Markdown æ–‡æœ¬
         string markdownText = @"
 ## Hello World
 This is an example of **bold text**, *italic text*, and a [link](https://www.example.com).
@@ -38,46 +38,46 @@ Here is a list:
 And here is a code block:
 
 ";
-// ´´½¨ Markdown ×ª»»Æ÷ÊµÀı
+// åˆ›å»º Markdown è½¬æ¢å™¨å®ä¾‹
         Markdown markdownConverter = new Markdown();
 
-        // ½« Markdown ÎÄ±¾×ª»»Îª HTML
+        // å°† Markdown æ–‡æœ¬è½¬æ¢ä¸º HTML
         string htmlOutput = markdownConverter.Transform(markdownText);
 
-        // Êä³ö×ª»»ºóµÄ HTML
+        // è¾“å‡ºè½¬æ¢åçš„ HTML
         Console.WriteLine(htmlOutput);
     }
 }
 
 ```
-## Ä¿Ç°ÒÑÊµÏÖµÄ¹¦ÄÜ¼°Ê¹ÓÃ·½·¨
-ÒÑÊµÏÖ±êÌâ£¬´ÖÌå£¬ÏÂ»®Ïß£¬É¾³ıÏß£¬Í¼Æ¬£¬Á´½Ó£¬±í¸ñ£¬ÓĞĞòÎŞĞòĞòÁĞ<br>
-ÆäËûµÄÇë×ĞÏ¸¿´[markdown.com](https://markdown.com.cn/cheat-sheet.html)
+## ç›®å‰å·²å®ç°çš„åŠŸèƒ½åŠä½¿ç”¨æ–¹æ³•
+å·²å®ç°æ ‡é¢˜ï¼Œç²—ä½“ï¼Œä¸‹åˆ’çº¿ï¼Œåˆ é™¤çº¿ï¼Œå›¾ç‰‡ï¼Œé“¾æ¥ï¼Œè¡¨æ ¼ï¼Œæœ‰åºæ— åºåºåˆ—<br>
+å…¶ä»–çš„è¯·ä»”ç»†çœ‹[markdown.com](https://markdown.com.cn/cheat-sheet.html)
 ```Markdown
-# Ò»¼¶±êÌâ
-## ¶ş¼¶±êÌâ
-### Èı¼¶±êÌâ
-#### ËÄ¼¶±êÌâ
-##### Îå¼¶±êÌâ
-###### Áù¼¶±êÌâ
+# ä¸€çº§æ ‡é¢˜
+## äºŒçº§æ ‡é¢˜
+### ä¸‰çº§æ ‡é¢˜
+#### å››çº§æ ‡é¢˜
+##### äº”çº§æ ‡é¢˜
+###### å…­çº§æ ‡é¢˜
 
-**´ÖÌå**
+**ç²—ä½“**
 
-_ÏÂ»®Ïß_
+_ä¸‹åˆ’çº¿_
 
-~~É¾³ıÏß~~
+~~åˆ é™¤çº¿~~
 
-[Á´½Ó](https://markdown.com.cn/cheat-sheet.html)
+[é“¾æ¥](https://markdown.com.cn/cheat-sheet.html)
 
-| ±íÍ·1 | ±íÍ·2 |
+| è¡¨å¤´1 | è¡¨å¤´2 |
 |-------|-------|
-| µ¥Ôª¸ñ | µ¥Ôª¸ñ |
+| å•å…ƒæ ¼ | å•å…ƒæ ¼ |
 
-1. ÓĞĞòĞòÁĞ
-2. ÓĞĞòĞòÁĞ
+1. æœ‰åºåºåˆ—
+2. æœ‰åºåºåˆ—
 
-- ÎŞĞòÁĞ
-- ÎŞĞòÁĞ
+- æ— åºåˆ—
+- æ— åºåˆ—
 ```
-## ÏÂÔØµØÖ·
+## ä¸‹è½½åœ°å€
 ![NuGet](https://img.shields.io/MarkdownSharp/v/MarkdownSharp.svg)(https://www.nuget.org/packages/MarkdownSharp/) 
